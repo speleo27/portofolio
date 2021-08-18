@@ -1,7 +1,12 @@
 
 $primaryColor: ligthblue;
-body{
-  background: url('../../../public/assets/img/background.jpg') ;
-  background-image: center no-repeat;
+
+
+#presentationPicture,#presentationPicture1,#presentationPicture2,#presentationPicture3{
+  border: solid 1px;
+  max-width: 80%;
+}
+#presentationPicture1,#presentationPicture2,#presentationPicture3{
+  margin-left:5px;
 }
 @import '../../../node_modules/bootstrap/scss/bootstrap';

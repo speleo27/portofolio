@@ -2,30 +2,38 @@
 {# { % block title %}Hello contact page!{% endblock %}#}
 {% block body %}
 <form method="post" action="">
-	<div class="input-group mb-3">
-		<span class="input-group-text" id="inputGroup-sizing-default">Firstname</span>
-		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"name="firstname">
+	<div class="container ">
+		<div class="row  align-items-center">
+			<div class="mb-3 col-3 ">
+				<label for="Firstname" class="form-label">Firstname</label>
+				<input type="text" class="form-control" id="firstname" name="firstname" required>
+			</div>
+			<div class="mb-3 col-3">
+				<label for="lastname" class="form-label">Lastname</label>
+				<input type="text" class="form-control" id="lastname" name="lastname" required>
+			</div>
+		</div>
+		<div class="row  align-items-center">
+			<div class="mb-3 col-3">
+				<label for="exampleFormControlInput1" class="form-label">Email address</label>
+				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+			</div>
+			<div class="mb-3 col-3">
+				<label for="phone" class="form-label">phone</label>
+				<input type="phone" class="form-control" id="phone" name="phone">
+			</div>
+		</div>
+		<div class="row">
+				<div class="mb-3">
+				<label for="object" class="form-label">Object</label>
+				<input type="text" class="form-control" id="object" name="object">
+			</div>
+			<div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label">Message</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
 	</div>
-	<div class="input-group mb-3">
-		<span class="input-group-text" id="inputGroup-sizing-default">Lastname</span>
-		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"name="name">
-	</div>
-	<div class="input-group mb-3">
-		<span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-		<input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"name="email">
-	</div>
-	<div class="input-group mb-3">
-		<span class="input-group-text" id="inputGroup-sizing-default">Phone</span>
-		<input type="phone" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"name="phone">
-	</div>
-	<div class="input-group mb-3">
-		<span class="input-group-text" id="inputGroup-sizing-default">Object</span>
-		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"name="object">
-	</div>
-	<div class="input-group mb-3">
-		<label for="exampleFormControlTextarea1" class="form-label">Your demands:</label>
-		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
-	</div>
-	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
 {% endblock %}
