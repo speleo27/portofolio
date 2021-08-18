@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  },
+  "name": "portofolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "symfony": "symfony server:start",
+    "sass": "sass -w --style=compressed src/lib/sass/app.scss:public/assets/css/app.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,33 @@
+{% extends './security/login.html.twig'%}
+
+{% block body %}
+	{% if app.user %}
+		<div class="mb-3">
+			You are logged in as {{ app.user.username }}
+		</div>
+
+	{% endif %}
+
+	<table class="table table-striped">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>FirstName</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Object</th>
+		</tr>
+		</thead>
+		<tbody>
+		{% for contact in contacts %}
+			<tr>
+				<td>{{ contact.getName }}</td>
+				<td>{{ contact.getFirstname }}</td>
+				<td>{{ contact.getEmail }}</td>
+				<td>{{ contact.getPhone }}</td>
+				<td>{{ contact.getObject }}</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+{% endblock %}
